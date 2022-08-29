@@ -112,11 +112,31 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     max-width: 30rem;
-    min-height: 90%;
+    min-height: 37rem;
+  }
+}
+
+/* GALAXY FOLD */
+@media screen and (max-width: 299px) {
+  .card {
+    background-image: url(./images/image-product-mobile.jpg);
+    background-size: 100% 30%;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 30rem;
+    min-height: 34rem;
   }
 
-  button {
-    background-position: 30% 50%;
+  .card-content {
+    max-height: 20rem;
+    margin: 1rem;
+  }
+
+  .product-title {
+    font-size: 1.5rem !important;
+  }
+  .product-price-actual {
+    font-size: 1.5rem !important;
   }
 }
 
@@ -133,10 +153,6 @@ body {
 
   .card-content {
     max-width: 40%;
-  }
-
-  button {
-    background-position: 25% 50%;
   }
 }
 
@@ -182,20 +198,26 @@ body {
 }
 
 button {
+  align-items: center;
   background-color: hsl(158, 36%, 37%);
-  background-image: url(./images/icon-cart.svg);
-  background-repeat: no-repeat;
   border: none;
   border-radius: 10px;
   color: hsl(0, 0%, 100%);
   cursor: pointer;
+  display: flex;
   font-weight: 700;
   height: 3rem;
+  justify-content: center;
   width: 100%;
 }
 
 button:hover {
   background-color: hsl(158, 36%, 30%);
+}
+
+.icon-cart {
+  display: inline-block;
+  margin-right: 0.5rem;
 }
 
 /* --- ATTRIBUTION --- */
